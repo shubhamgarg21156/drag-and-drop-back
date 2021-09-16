@@ -11,10 +11,10 @@ const db = require("./config/mongoose");
 //Data Model of MongoDB
 const Data = require("./models/data");
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   next();
+// });
 
 //router to find the required data
 app.get("/find", (req, res) => {
